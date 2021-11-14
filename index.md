@@ -10,7 +10,7 @@
 3. [第四面](/page4.md) 
 4. [牧羊少年奇幻之旅](/牧羊少年奇幻之旅.md)
 
-
+![](https://www.hualigs.cn/image/61905c6512569.jpg)
 
 
 ##### [ssh密码](/ssh.md)

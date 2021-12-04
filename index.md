@@ -1,4 +1,6 @@
 # 主页
+#### [新站](https://jekyll-beta-six.vercel.app/)
+
 #### [音乐Credit](http://tmp.link/f/617d4d0f60390)
 #### [ADhosts](https://gitee.com/e7kmbb/AD-hosts)
 

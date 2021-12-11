@@ -26,6 +26,7 @@
 4. [牧羊少年奇幻之旅](/牧羊少年奇幻之旅.md)
 5. [美文](/美文.md)
 6. [李信](/李信.md)
+7. [小王子](/小王子修订.md)
 
 图片:![](https://mkblog.cn/go/?url=http://api.mkblog.cn/bing/jump.php)
 

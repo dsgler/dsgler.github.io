@@ -3,7 +3,7 @@
 
 #### [音乐Credit](http://tmp.link/f/617d4d0f60390)
 #### [ADhosts](https://gitee.com/e7kmbb/AD-hosts)
-#### [快递](https://kuaidi100.com/index.jsp?nu=75602919205905)
+#### [快递](https://m.baidu.com/s?from=2001p&wd=75602919205905)
 
 >每一个不曾起舞的日子，都是对生命的辜负。
 

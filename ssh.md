@@ -8,3 +8,13 @@ MIIEpAIBAAKCAQEAu6pH0bahErdnJrTPhvlpO7SgQ58jt2sbHrhSCk25GhHYEUj+Y3GPPsMmDhiD+SZT
 
 ***
 token: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
+
+***
+'外网面板地址: http://8.142.36.164:8888/cd1440df  
+内网面板地址: http://172.25.64.52:8888/cd1440df  
+username: tj5ascuq  
+password: a2646463  
+If you cannot access the panel,
+release the following panel port [8888] in the security group  
+若无法访问面板，请检查防火墙/安全组是否有放行面板[8888]端口  
+'

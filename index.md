@@ -2,7 +2,7 @@
 https://dsgler.bitbucket.io/4班抽奖by-yyf-不重复.html<br>https://dash.sonicbit.net/
 #### [新站](https://jekyll-beta-six.vercel.app/)
 #### [开拓站](https://dsgler.bitbucket.io/)
-## [快递](https://www.baidu.com/s?word=75603233063759)
+## [快递](https://www.baidu.com/s?word=YT8028766502936)
 #### [音乐Credit](http://tmp.link/f/617d4d0f60390)
 #### [ADhosts](https://gitee.com/e7kmbb/AD-hosts)
 #### [花名册](http://tmp.link/f/61b825c0b4410)

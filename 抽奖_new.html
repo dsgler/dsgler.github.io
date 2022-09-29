@@ -1,0 +1,219 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	 
+    <title>无标题</title>
+    
+  </head> 
+  <style type="text/css">
+      #dmd{
+        position: fixed;
+        right: 5px;
+        top: 30px;
+        background: #eceae6;
+        border: 2px dotted;
+        padding: 30px 10px;
+        display: none;
+      }
+  </style>
+  <body> 
+
+
+
+
+<div style="text-align: center;">
+后门：<input id="hminput"><br><br>
+<button onclick="javascript:pd()" style="width: 50px; height: 50px; border-radius:50%;border: none;background-color: #87CEEB;font: ;color: white;">刷新</button>
+<p id="sss" style="font-size: 30px;"></p>
+<p id="cs" style="font-size:70px"></p>
+<p id="cs2"></p>
+<div id="dmd">
+    <ol id="dmdout">
+<li>Coffee</li>
+<li>Milk</li>
+</ol>
+</div>
+</div>
+
+
+<!--<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+   <script>
+   var cars=["1 曾晨希",
+"2 袁一夫",
+"3 张家奇",
+"4 王楚熙",
+"5 祝泽源",
+"6 庹嘉振",
+"7 刘梦琨",
+"8 李卓钦",
+"9 季子奇",
+"10 詹闻博",
+"11 程俊昊",
+"12 周乾露",
+"13 邓皓文",
+"14 吴梓诚",
+"15 杨镇豪",
+"16 王俊哲",
+"17 苏立行",
+"18 张浩",
+"19 程自牧",
+"20 刘宇彤",
+"21 陈雨娴",
+"22 黄郑煊",
+"23 张竞宇",
+"24 郑华轩",
+"25 戴岭航",
+"26 成英杰",
+"27 王智行",
+"28 聂明宇",
+"29 杨竣杰",
+"30 黄显殊",
+"31 方怡文",
+"32 陈伟",
+"33 李沛松",
+"34 张乘玮",
+"35 李玖融",
+"36 何奕乐",
+"37 肖心宇",
+"38 吴佩琨",
+"39 郭金梁",
+"40 付哲广",
+"41 严天成",
+"42 杨和沐",
+"43 刘宗泽",
+"44 吴怡晨",
+"45 彭凌越",
+"46 李培玥",
+"47 陈思宇",
+"48 苗曦月",
+"49 郑舒颜",
+"50 陈语恩"
+]
+const carshm=["1 曾晨希",
+"2 袁一夫",
+"3 张家奇",
+"4 王楚熙",
+"5 祝泽源",
+"6 庹嘉振",
+"7 刘梦琨",
+"8 李卓钦",
+"9 季子奇",
+"10 詹闻博",
+"11 程俊昊",
+"12 周乾露",
+"13 邓皓文",
+"14 吴梓诚",
+"15 杨镇豪",
+"16 王俊哲",
+"17 苏立行",
+"18 张浩",
+"19 程自牧",
+"20 刘宇彤",
+"21 陈雨娴",
+"22 黄郑煊",
+"23 张竞宇",
+"24 郑华轩",
+"25 戴岭航",
+"26 成英杰",
+"27 王智行",
+"28 聂明宇",
+"29 杨竣杰",
+"30 黄显殊",
+"31 方怡文",
+"32 陈伟",
+"33 李沛松",
+"34 张乘玮",
+"35 李玖融",
+"36 何奕乐",
+"37 肖心宇",
+"38 吴佩琨",
+"39 郭金梁",
+"40 付哲广",
+"41 严天成",
+"42 杨和沐",
+"43 刘宗泽",
+"44 吴怡晨",
+"45 彭凌越",
+"46 李培玥",
+"47 陈思宇",
+"48 苗曦月",
+"49 郑舒颜",
+"50 陈语恩"
+]
+    var lb=[] 
+function pd(){
+    var hmget=Number(document.getElementById("hminput").value)
+    if (hmget<56&hmget>0){
+    document.getElementById("cs").innerHTML=carshm[hmget-1]
+    lb.push(carshm[hmget-1])
+    document.getElementById("cs2").innerHTML=lb
+    document.getElementById("hminput").value=null
+}
+else{
+    aaa()
+}
+}
+  
+  
+   function sjs(min,max){ 
+    switch(arguments.length){ 
+        case 1: 
+            return Math.floor(Math.random()*minNum+1); 
+        break; 
+        case 2: 
+            return Math.floor(Math.random()*(max-min+1)+min); 
+        break; 
+            default: 
+                return 0; 
+            break; 
+    } 
+} 
+
+if (localStorage.getItem('dmdm')){
+    dmdlist=JSON.parse(localStorage.getItem('dmdm'))
+}else{
+dmdlist=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+}
+dmdout()
+    function aaa(){
+     if (cars.length<1){document.getElementById("cs").innerHTML='已抽空';return false}
+    var x=1
+    var y=cars.length
+    var sy=sjs(Number(x),Number(y))-1
+    name=cars[sy]
+    document.getElementById("cs").innerHTML=name
+  lb.push(name)
+  cars.splice(sy,1)
+  document.getElementById("cs2").innerHTML=lb
+  /*-----------*/
+  //index=$.inArray(name,carshm)
+  index=carshm.indexOf(name)
+  if (typeof(dmdlist[index])=='undefined') {
+    dmdlist[index]=1
+  }
+  else{dmdlist[index]+=1}
+  dmdout()
+  localStorage.setItem('dmdm',JSON.stringify(dmdlist))
+}
+
+function dmdout(){
+    let topp=maxten(dmdlist)
+    let str='';
+  for (i=0;i<10;i++){str+='<li>'+carshm[topp[i][0]]+topp[i][1]+'</li>'}
+  document.getElementById('dmdout').innerHTML=str
+}
+/*-----------*/
+function maxten(arr){
+    let a=Math.max.apply(null,arr);
+    var topp=[]
+    topp=[]
+do{
+    for (i=0;i<arr.length;i++){
+        if (arr[i]==a){topp.push([i,a])}
+}//列表循环
+	a-=1
+   console.log('hhh;'+topp.length)
+}while(topp.length<10);
+return topp;
+}
+   </script>
+  
+</body></html>

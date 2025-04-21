@@ -1,0 +1,33 @@
+{
+  "timeStamp": 1743490176911,
+  "version": "1.63.2",
+  "userSettings": {
+    "importedLists": [],
+    "popupPanelSections": 31
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-unbreak",
+    "ublock-quick-fixes",
+    "easylist",
+    "easyprivacy",
+    "urlhaus-1",
+    "plowe-0",
+    "CHN-0"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "chrome-extension-scheme",
+    "localhost",
+    "moz-extension-scheme",
+    "passport.neea.edu.cn",
+    "smartcourse.hust.edu.cn"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false",
+  "userFilters": "! 2024年7月21日 https://www.bilibili.com\nwww.bilibili.com##.part-1.pop-live-small-mode\n\n! 2024年10月4日 https://liaoxuefeng.com\nliaoxuefeng.com###comment-form+div\n\n! 2024年10月4日 https://nodejs.cn\n||nodejs.cn/adimg/*$image\nnodejs.cn##.pageadw"
+}
